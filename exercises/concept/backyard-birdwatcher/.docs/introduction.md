@@ -48,9 +48,9 @@ tail ( seq n -- tailseq )    ! drop first n
 { 1 2 3 4 5 } 3 tail .   ! => { 4 5 }
 ```
 
-Both throw if `n` is larger than the sequence. `index-or-length`
-clamps `n` to the sequence's length, so chaining it in turns a
-potentially-out-of-range slice into a safe one:
+Both throw if `n` is larger than the sequence. If `n` is too big,
+`index-or-length` shrinks it down to the sequence's length, so the
+slice that follows can't run off the end:
 
 ```
 index-or-length ( seq n -- seq n' )
