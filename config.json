@@ -272,6 +272,32 @@
         "status": "beta"
       },
       {
+        "slug": "passphrase-patrol",
+        "name": "Passphrase Patrol",
+        "uuid": "3a22318e-df07-43f9-8fdd-757c923e19da",
+        "concepts": [
+          "regexp"
+        ],
+        "prerequisites": [
+          "strings",
+          "sequences"
+        ],
+        "status": "wip"
+      },
+      {
+        "slug": "ledger-lookout",
+        "name": "Ledger Lookout",
+        "uuid": "63178793-7386-445f-8437-55e775040ca0",
+        "concepts": [
+          "advanced-regexp"
+        ],
+        "prerequisites": [
+          "regexp",
+          "sequences"
+        ],
+        "status": "wip"
+      },
+      {
         "slug": "lap-leaderboard",
         "name": "Lap Leaderboard",
         "uuid": "431e56e5-956c-4383-9380-8fe5907081ae",
@@ -358,6 +384,20 @@
           "vocabularies"
         ],
         "status": "beta"
+      },
+      {
+        "slug": "tellers-triage",
+        "name": "Tellers' Triage",
+        "uuid": "76b33002-7a6b-46db-b0dd-a73c0a7b09e0",
+        "concepts": [
+          "heaps"
+        ],
+        "prerequisites": [
+          "combinators",
+          "assocs",
+          "sequences"
+        ],
+        "status": "wip"
       },
       {
         "slug": "rpn-calculator",
@@ -763,12 +803,14 @@
         "name": "High Scores",
         "uuid": "81e1ea19-1c58-4b34-b3c4-d05e029032aa",
         "practices": [
-          "tuples"
+          "tuples",
+          "heaps"
         ],
         "prerequisites": [
           "sequences",
           "higher-order-sequences",
-          "tuples"
+          "tuples",
+          "heaps"
         ],
         "difficulty": 2
       },
@@ -1043,7 +1085,8 @@
         "name": "Phone Number",
         "uuid": "7fa72ba9-5942-47aa-ae62-eba877d18905",
         "practices": [
-          "strings"
+          "strings",
+          "regexp"
         ],
         "prerequisites": [
           "strings",
@@ -1051,7 +1094,8 @@
           "higher-order-sequences",
           "errors",
           "unicode",
-          "recursion"
+          "recursion",
+          "regexp"
         ],
         "difficulty": 3
       },
@@ -1752,13 +1796,16 @@
         "slug": "pig-latin",
         "name": "Pig Latin",
         "uuid": "26d75b43-0f97-4224-809d-7246fda13195",
-        "practices": [],
+        "practices": [
+          "advanced-regexp"
+        ],
         "prerequisites": [
           "locals",
           "wire-format",
           "strings",
           "higher-order-sequences",
-          "conditionals"
+          "conditionals",
+          "advanced-regexp"
         ],
         "difficulty": 5
       },
@@ -2294,7 +2341,9 @@
         "slug": "wordy",
         "name": "Wordy",
         "uuid": "593abf4b-9ba6-4e31-8431-09f69263f3e1",
-        "practices": [],
+        "practices": [
+          "regexp"
+        ],
         "prerequisites": [
           "numbers",
           "conditionals",
@@ -2304,7 +2353,8 @@
           "wire-format",
           "errors",
           "locals",
-          "while"
+          "while",
+          "regexp"
         ],
         "difficulty": 7
       },
@@ -2510,6 +2560,16 @@
       "name": "Disjoint Sets"
     },
     {
+      "uuid": "e8867007-a1fb-473e-a10f-41063f18e1a6",
+      "slug": "regexp",
+      "name": "Regular Expressions"
+    },
+    {
+      "uuid": "581ecffe-ed25-4165-b2d2-353028d6f8a9",
+      "slug": "advanced-regexp",
+      "name": "Advanced Regular Expressions"
+    },
+    {
       "uuid": "3a7292bd-a725-464e-9bce-4a9762a9d98c",
       "slug": "indexed-iteration",
       "name": "Indexed Iteration"
@@ -2538,6 +2598,11 @@
       "uuid": "4005989e-fe6b-43d8-9406-b48e0212e8ea",
       "slug": "assocs",
       "name": "Assocs"
+    },
+    {
+      "uuid": "ee84323e-6099-40d2-8e50-e45317dc167a",
+      "slug": "heaps",
+      "name": "Heaps"
     },
     {
       "uuid": "7e06e471-37a8-485e-8009-dedd43ada4c5",
