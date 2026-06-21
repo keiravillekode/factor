@@ -19,11 +19,10 @@ left to right.
 1 2 3    ! stack (bottom → top): 1 2 3
 ```
 
-There is no other way to pass data around — every word reads its inputs
-from the top of the stack and writes its outputs back there. `.` pops
-the top value and prints it; `.s` prints the *whole* stack without
-consuming anything, which is handy for seeing what a snippet left
-behind.
+Every word reads its inputs from the top of the stack and writes its
+outputs back there. `.` pops the top value and prints it; `.s` prints
+the *whole* stack without consuming anything, which is handy for
+seeing what a snippet left behind.
 
 ## Stack effects
 
@@ -64,6 +63,22 @@ crate to the top.
 
 The wider family (`-rot`, `dupd`, `swapd`, `2dup`, …) follows the same
 idea; you will meet those words later.
+
+## How words compose
+
+Words written in a row run **left to right**: each word acts on the
+stack the word before it left behind. So `dup over` just means "run
+`dup`, then run `over` on what `dup` left." Here is what `swap nip`
+does to the stack `1 2` (bottom → top), one word at a time:
+
+```factor
+1 2     ! 1 2     the starting crates
+swap    ! 2 1     swap flipped the top two
+nip     ! 1       nip dropped the 2nd-from-top crate (the 2)
+```
+
+Concretely, `dup over` on `1 2` runs `dup` first (leaving `1 2 2`),
+then `over` on that (leaving `1 2 2 2`).
 
 ## Naming conventions
 
