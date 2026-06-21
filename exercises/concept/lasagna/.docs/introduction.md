@@ -37,8 +37,8 @@ them needs `math` in its `USING:` line.
 Every word is documented with a **stack effect** of the form
 `( inputs -- outputs )`. It is the word's contract: this word pops the
 inputs off the top of the stack and leaves the outputs in their place.
-The names inside are documentation for humans — the stack itself is
-positional, not named.
+The names inside are just there to help you read it. Factor doesn't
+use them — it only tracks the *order* values sit in on the stack.
 
 ```factor
 ! + is specified as ( x y -- sum )

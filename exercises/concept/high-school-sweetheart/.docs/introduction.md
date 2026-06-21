@@ -1,7 +1,9 @@
 # Introduction
 
-Factor's *function composition* is just the order you write words. A
-word's body is itself a sequence of words: each one consumes some
+In Factor, you combine words just by writing them one after another —
+the order you write them in *is* how they join up. (Programmers call
+this *function composition*.) A word's body is itself a sequence of
+words: each one consumes some
 values from the stack and pushes its result, and the next word picks
 up where the previous left off. So defining
 
@@ -12,8 +14,8 @@ up where the previous left off. So defining
 
 already *is* the composition of `cleanupname`, `first`, and `1string`.
 
-This exercise also introduces **quotations** — Factor's term for an
-anonymous, deferred sequence of words.
+This exercise also introduces **quotations** — a piece of code you can
+store as a value and run later, instead of running it on the spot.
 
 ## Quotations
 

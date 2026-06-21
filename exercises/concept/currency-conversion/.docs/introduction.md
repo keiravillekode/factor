@@ -7,8 +7,8 @@ point numbers and pick the right division word for the job.
 ## Integers and floats
 
 Factor distinguishes integers (`1`, `42`, `1_000_000`) from floating-
-point numbers (`1.0`, `3.14`, `6.02e23`). Mixed arithmetic auto-
-promotes to a float:
+point numbers (`1.0`, `3.14`, `6.02e23`). If you mix an integer and a
+float in one calculation, the result comes out as a float:
 
 ```factor
 2 3 + .      ! => 5
