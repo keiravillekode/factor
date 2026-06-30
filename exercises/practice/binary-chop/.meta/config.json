@@ -4,10 +4,10 @@
   ],
   "files": {
     "solution": [
-      "binary-search/binary-search.factor"
+      "binary-chop/binary-chop.factor"
     ],
     "test": [
-      "binary-search/binary-search-tests.factor"
+      "binary-chop/binary-chop-tests.factor"
     ],
     "example": [
       ".meta/example.factor"

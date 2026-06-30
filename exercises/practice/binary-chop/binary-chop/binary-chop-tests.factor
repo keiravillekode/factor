@@ -1,5 +1,5 @@
-USING: binary-search exercism-tools io kernel tools.test unicode ;
-IN: binary-search.tests
+USING: binary-chop exercism-tools io kernel tools.test unicode ;
+IN: binary-chop.tests
 
 "finds a value in an array with one element" description
 { 0 }

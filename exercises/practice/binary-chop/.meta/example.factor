@@ -1,5 +1,5 @@
 USING: combinators kernel locals math sequences ;
-IN: binary-search
+IN: binary-chop
 
 ERROR: value-not-in-array ;
 

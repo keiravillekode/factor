@@ -979,8 +979,9 @@
         "difficulty": 3
       },
       {
-        "slug": "binary-search",
+        "slug": "binary-chop",
         "name": "Binary Search",
+        "specification": "binary-search",
         "uuid": "ea3a619c-0d03-4688-821a-22379470d7e1",
         "practices": [
           "recursion"

@@ -1,5 +1,5 @@
 USING: kernel ;
-IN: binary-search
+IN: binary-chop
 
 ERROR: value-not-in-array ;
 
