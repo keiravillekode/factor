@@ -1,0 +1,2 @@
+: transform ( legacy -- new )
+    [ [ >lower ] map ] assoc-map assoc-invert expand-keys-set-at ;

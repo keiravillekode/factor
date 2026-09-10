@@ -1,0 +1,21 @@
+{
+  "introduction": {
+    "authors": ["keiravillekode"]
+  },
+  "approaches": [
+    {
+      "uuid": "8d7668a3-15b7-4f61-acea-759bd30f2da6",
+      "slug": "postfix-locals",
+      "title": "Postfix arithmetic with locals",
+      "blurb": "Compute each formula in Factor's native postfix notation, with named locals.",
+      "authors": ["keiravillekode"]
+    },
+    {
+      "uuid": "a8dfdbf7-69b6-42cf-a958-6ac66acf9405",
+      "slug": "infix",
+      "title": "Infix arithmetic",
+      "blurb": "Write each formula in conventional mathematical notation with the infix vocabulary.",
+      "authors": ["keiravillekode"]
+    }
+  ]
+}

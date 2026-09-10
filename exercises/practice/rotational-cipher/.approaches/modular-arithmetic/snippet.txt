@@ -1,0 +1,8 @@
+: shift-from ( base ch shift -- ch' )
+    swap pick - + 26 mod + ;
+: shift-char ( ch shift -- ch' )
+    {
+        { [ over CHAR: a CHAR: z between? ] [ [ CHAR: a ] 2dip shift-from ] }
+        { [ over CHAR: A CHAR: Z between? ] [ [ CHAR: A ] 2dip shift-from ] }
+        [ drop ]
+    } cond ;

@@ -1,0 +1,8 @@
+:: rotated-pairs ( alphabet shift -- pairs )
+    alphabet <circular> :> circ
+    shift circ change-circular-start
+    alphabet circ zip ;
+
+:: rotate ( text shift -- cipher )
+    text lower-alpha upper-alpha
+    [ shift rotated-pairs ] bi@ append substitute ;

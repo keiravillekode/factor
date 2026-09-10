@@ -1,0 +1,8 @@
+:: proteins ( strand -- result )
+    strand 3 group :> codons
+    0 :> i!  V{ } clone :> acc  t :> going!
+    [ going i codons length < and ] [
+        i codons nth codon>protein
+        dup "STOP" = [ drop f going! ] [ acc push i 1 + i! ] if
+    ] while
+    acc >array ;

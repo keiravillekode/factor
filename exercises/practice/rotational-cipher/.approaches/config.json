@@ -1,0 +1,21 @@
+{
+  "introduction": {
+    "authors": ["keiravillekode"]
+  },
+  "approaches": [
+    {
+      "uuid": "3e640b2a-5873-48c3-ba7d-4961a013a4e1",
+      "slug": "modular-arithmetic",
+      "title": "Modular arithmetic",
+      "blurb": "Shift each letter's character code and wrap around with mod 26.",
+      "authors": ["keiravillekode"]
+    },
+    {
+      "uuid": "bde28bbf-8b83-4be1-904c-f602eb577174",
+      "slug": "circular",
+      "title": "Circular alphabet",
+      "blurb": "Rotate a circular view of the alphabet and substitute letter for letter.",
+      "authors": ["keiravillekode"]
+    }
+  ]
+}

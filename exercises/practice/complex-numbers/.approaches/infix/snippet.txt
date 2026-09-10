@@ -1,0 +1,8 @@
+:: c* ( x y -- z )
+    x y [ parts ] bi@ :> ( a b c d )
+    [infix a*c - b*d infix] [infix a*d + b*c infix] <cmplx> ;
+
+:: c/ ( x y -- z )
+    x y [ parts ] bi@ :> ( a b c d )
+    [infix (a*c + b*d) / (c*c + d*d) infix]
+    [infix (b*c - a*d) / (c*c + d*d) infix] <cmplx> ;

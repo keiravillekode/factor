@@ -1,0 +1,21 @@
+{
+  "introduction": {
+    "authors": ["keiravillekode"]
+  },
+  "approaches": [
+    {
+      "uuid": "2cb423dc-2c7e-4154-8b5b-e9d661501e4e",
+      "slug": "digit-accumulator",
+      "title": "Digit accumulator",
+      "blurb": "Decode character by character, accumulating counts in mutable locals.",
+      "authors": ["keiravillekode"]
+    },
+    {
+      "uuid": "0257089f-720f-4659-bfe4-1918e7cf4899",
+      "slug": "sequences-extras",
+      "title": "Run at a time with sequences.extras",
+      "blurb": "Decode declaratively, slicing off one run at a time with cut-when and produce.",
+      "authors": ["keiravillekode"]
+    }
+  ]
+}

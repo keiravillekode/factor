@@ -1,0 +1,8 @@
+:: decode ( str -- decoded )
+    "" 0 :> ( acc! n! )
+    str [| ch |
+        ch digit? [ n 10 * ch CHAR: 0 - + n! ] [
+            n 0 = [ 1 n! ] when
+            acc n ch <array> >string append acc!  0 n!
+        ] if
+    ] each acc ;

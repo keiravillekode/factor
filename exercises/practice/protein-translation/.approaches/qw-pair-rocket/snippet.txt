@@ -1,0 +1,8 @@
+CONSTANT: codon-table $[ qw{
+    AUG Methionine     UUU Phenylalanine  UUC Phenylalanine
+    UGG Tryptophan     UAA STOP           UAG STOP
+} 2 group ]                                        ! abridged
+
+: proteins ( strand -- proteins )
+    3 group dup [ codon>protein "STOP" = ] find drop
+    [ head ] when* [ codon>protein ] map ;

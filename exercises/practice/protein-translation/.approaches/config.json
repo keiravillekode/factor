@@ -1,0 +1,21 @@
+{
+  "introduction": {
+    "authors": ["keiravillekode"]
+  },
+  "approaches": [
+    {
+      "uuid": "7fb96b02-7b35-43b8-aed3-49933b576a51",
+      "slug": "while-loop",
+      "title": "While loop",
+      "blurb": "Walk the codons with an index, mutable locals and a while loop.",
+      "authors": ["keiravillekode"]
+    },
+    {
+      "uuid": "391b5e3c-c0a9-47df-a5dc-50e26aeb54a3",
+      "slug": "qw-pair-rocket",
+      "title": "Terse literals with qw and pair-rocket",
+      "blurb": "Write the codon table tersely with qw or pair-rocket, then translate with find and map.",
+      "authors": ["keiravillekode"]
+    }
+  ]
+}

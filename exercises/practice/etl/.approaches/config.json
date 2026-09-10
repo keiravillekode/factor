@@ -1,0 +1,21 @@
+{
+  "introduction": {
+    "authors": ["keiravillekode"]
+  },
+  "approaches": [
+    {
+      "uuid": "398f99f3-509a-432f-bc8a-ea0c6d854018",
+      "slug": "nested-each",
+      "title": "Nested loops with set-at",
+      "blurb": "Fill a fresh hashtable with two nested loops and mutation.",
+      "authors": ["keiravillekode"]
+    },
+    {
+      "uuid": "6a209d5e-a9db-41ea-8409-42b1f7e915db",
+      "slug": "assocs-extras",
+      "title": "A pipeline with assocs.extras",
+      "blurb": "Invert and expand the assoc declaratively with assocs.extras combinators.",
+      "authors": ["keiravillekode"]
+    }
+  ]
+}

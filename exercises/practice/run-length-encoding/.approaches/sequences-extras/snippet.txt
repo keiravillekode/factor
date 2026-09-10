@@ -1,0 +1,7 @@
+:: next-run ( str -- rest run )
+    str [ digit? not ] cut-when :> ( digits more )
+    more unclip-slice :> ( rest ch )
+    rest digits >string string>number 1 or ch <string> ;
+
+: decode ( str -- decoded )
+    [ dup empty? not ] [ next-run ] produce nip "" concat-as ;
